@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Details</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #f2f8f9;
+        }
+
+        header {
+            background-color: #16808f;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #222;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+        }
+
+        nav a:hover {
+            color: #20c4d4;
+        }
+
+        section {
+            width: 85%;
+            margin: 25px auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #16808f;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #16808f;
+            color: white;
+        }
+
+        form {
+            width: 60%;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"] {
+            width: auto;
+        }
+
+        input[type="submit"] {
+            background-color: #16808f;
+            color: white;
+            border: none;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        .gallery {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .gallery div {
+            width: 45%;
+            text-align: center;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Travel Details</h1>
+    <p>Packages, Booking and More</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="travel.html">Travel Details</a>
+</nav>
+
+<section>
+
+    <h2>Our Travel Packages</h2>
+
+    <table>
+
+        <tr>
+            <th>Package</th>
+            <th>Destination</th>
+            <th>Duration</th>
+            <th>Price</th>
+        </tr>
+
+        <tr>
+            <td>Beach Escape</td>
+            <td>Goa</td>
+            <td>4 Days</td>
+            <td>₹15,000</td>
+        </tr>
+
+        <tr>
+            <td>Mountain Trip</td>
+            <td>Manali</td>
+            <td>5 Days</td>
+            <td>₹20,000</td>
+        </tr>
+
+        <tr>
+            <td>Royal Rajasthan</td>
+            <td>Jaipur</td>
+            <td>6 Days</td>
+            <td>₹25,000</td>
+        </tr>
+
+        <tr>
+            <td>Kerala Tour</td>
+            <td>Kerala</td>
+            <td>7 Days</td>
+            <td>₹30,000</td>
+        </tr>
+
+    </table>
+
+</section>
+
+<section>
+
+    <h2>Booking Form</h2>
+
+    <form>
+
+        <label>Name:</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Phone:</label>
+        <input type="tel" placeholder="Enter phone number">
+
+        <label>Travel Date:</label>
+        <input type="date">
+
+        <label>Destination:</label>
+        <select>
+            <option>Goa</option>
+            <option>Manali</option>
+            <option>Jaipur</option>
+            <option>Kerala</option>
+        </select>
+
+        <label>Package:</label>
+        <select>
+            <option>Beach Escape</option>
+            <option>Mountain Trip</option>
+            <option>Royal Rajasthan</option>
+            <option>Kerala Tour</option>
+        </select>
+
+        <label>Number of People:</label>
+        <input type="number" min="1">
+
+        <label>Travel Type:</label>
+
+        <input type="radio" name="type"> Family
+        <input type="radio" name="type"> Friends
+        <input type="radio" name="type"> Solo
+
+        <label>Special Requirements:</label>
+        <textarea placeholder="Enter your requirements"></textarea>
+
+        <input type="submit" value="Book Now">
+
+    </form>
+
+</section>
+
+<section>
+
+    <h2>Travel Tips</h2>
+
+    <ul>
+        <li>Carry your identity documents.</li>
+        <li>Keep emergency money with you.</li>
+        <li>Check the weather before travelling.</li>
+        <li>Carry necessary medicines.</li>
+        <li>Keep your belongings safe.</li>
+    </ul>
+
+    <h2>Must Visit Places</h2>
+
+    <ol>
+        <li>Goa Beaches</li>
+        <li>Manali Mountains</li>
+        <li>Jaipur City Palace</li>
+        <li>Kerala Backwaters</li>
+    </ol>
+
+</section>
+
+<section>
+
+    <h2>Travel Gallery</h2>
+
+    <div class="gallery">
+
+        <div>
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+                 alt="Goa Beach">
+            <p>Goa Beach</p>
+        </div>
+
+        <div>
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b"
+                 alt="Mountain">
+            <p>Mountain View</p>
+        </div>
+
+        <div>
+            <img src="https://images.unsplash.com/photo-1548013146-72479768bada"
+                 alt="India">
+            <p>Beautiful India</p>
+        </div>
+
+        <div>
+            <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7"
+                 alt="Travel">
+            <p>Travel Destination</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2>About Us</h2>
+
+    <p>
+        WanderWorld Travels is a travel agency that provides
+        affordable and comfortable travel packages.
+    </p>
+
+    <h2>Contact Us</h2>
+
+    <p>Email: wanderworld@gmail.com</p>
+    <p>Phone: +91 9876543210</p>
+    <p>Address: New Delhi, India</p>
+
+</section>
+
+<footer>
+    <p>2026 WanderWorld Travels</p>
+    </footer>
+    </body>
+</html>
